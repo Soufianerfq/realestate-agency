@@ -14,7 +14,7 @@ export default function Footer(){
                     </div>
                 </div>
 
-                <div className="flex justify-between  min-w-[50%] mt-[20px]">
+                <div className="flex justify-between  min-w-[40%] mt-[20px]">
                     <div className="mr-[10px] ml-[10px]">
                         <h2 className="lg:text-[18px] text-[15px] font-semibold text-white mb-[8px]">QUICK LINKS</h2>
                         <h3 className="text-[#BDBDBD] text-[11px] lg:text-[14px] font-normal mb-[8px]">Home</h3>
