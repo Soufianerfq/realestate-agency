@@ -31,7 +31,7 @@ const comments= [
     {
         id:1,
         src: review,
-        header: "Dream house isn’t dream anymore",
+        header: "1 Dream house isn’t dream anymore",
         comment: "Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.",
         name: "Brooklyn Simmons",
         tag: "Artist"
@@ -39,7 +39,7 @@ const comments= [
     {
         id:2,
         src: review,
-        header: "Dream house isn’t dream anymore",
+        header: "2 Dream house isn’t dream anymore",
         comment: "Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.",
         name: "Brooklyn Simmons",
         tag: "Artist"
@@ -47,7 +47,7 @@ const comments= [
     {
         id:3,
         src: review,
-        header: "Dream house isn’t dream anymore",
+        header: "3 Dream house isn’t dream anymore",
         comment: "Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.",
         name: "Brooklyn Simmons",
         tag: "Artist"

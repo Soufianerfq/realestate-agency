@@ -3,7 +3,7 @@ import Nav from "./Nav"
 import HambugerComp from "./Hamburger"
 import { useEffect, useState } from "react"
 
-export default function Header(){
+export default function Header({home, portfolio, reviews, contactus, aboutus }){
     const [small, setSmall] = useState(null)
 
   useEffect(()=>{
@@ -22,13 +22,25 @@ export default function Header(){
 
     return(
         <>
-            <div id="logo" >
+            <div id="logo" className="text-[18px] font-semibold" >
                 <h2>LUGAR</h2>
             </div>
             {!small ? (
-                <Nav/>
+                <Nav
+                home = {home}
+                reviews={reviews}
+                portfolio={portfolio}
+                contactus={contactus}
+                aboutus={aboutus}
+                />
                 ) : (
-                    <HambugerComp/>
+                    <HambugerComp
+                home = {home}
+                reviews={reviews}
+                portfolio={portfolio}
+                contactus={contactus}
+                aboutus={aboutus}
+                    />
                     )}
         </>
     )

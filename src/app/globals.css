@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#card{
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+}
+.group {
+      will-change: transform;
+      animation: scrolling 15s linear infinite;
+}
+
+  @keyframes scrolling {
+      0% {
+          transform: translateX(0);
+      }
+
+      100% {
+          transform: translateX(-470%);
+      }
+  }
+#caroussel:hover .group{
+        animation-play-state: paused;
+
+}
+
+nav>button{
+    cursor: pointer;
+    transition: 0.2s;
+}
+nav>button:hover {
+    transform: scale(1.1);
+}
+
+.action{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action:hover {
+    transform: translateY(-3px);
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
