@@ -36,7 +36,7 @@ export default function Reviews(){
                 <div id="slider" className="flex overflow-hidden w-screen">
                     {comments.map(({id, src, header, comment, name, tag })=>{
                         return(
-                        <div style={{translate: `${-100 * commentIndex}%`}} className="md:min-w-screen min-w-[100%] flex justify-center mr-[10px] p-[20px] transition">
+                        <div style={{translate: `${-100 * commentIndex}%`}} className="md:min-w-screen min-w-[100%] flex justify-center p-[20px] transition">
                             <button onClick={()=> showPrev()}><Image className="min-w-[20px]" src={left}/></button>
                             <div key={id} className=" flex justify-around items-center md:flex-row md:w-[1450px] lg:ml-[20px] lg:mr-[20px] flex-col mr-auto ml-auto  ">
                                 <div className=" w-fit m-[10px]">
