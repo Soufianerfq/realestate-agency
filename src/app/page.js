@@ -18,7 +18,7 @@ export default function Home() {
       <header className="w-full fixed top-0 z-[99] bg-[#AFD4E2] text-[#1E3240] flex justify-between pt-[20px] pb-[15px] pr-[30px] pl-[8%]">
         <Header home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} aboutus = {aboutusRef}/>
       </header>
-      <main ref={homesRef} className="w-full   bg-[#AFD4E2] text-[#1E3240]">
+      <main ref={homesRef} className="w-full 2xl:h-[100vh]  bg-[#AFD4E2] text-[#1E3240]">
         <Main/>
       </main>
       <section ref={aboutusRef} id="aboutus" className="w-full">

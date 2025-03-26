@@ -36,21 +36,21 @@ export default function Reviews(){
                 <div id="slider" className="flex overflow-hidden w-screen">
                     {comments.map(({id, src, header, comment, name, tag })=>{
                         return(
-                        <div style={{translate: `${-100 * commentIndex}%`}} className="md:min-w-screen min-w-[100%] flex justify-center p-[20px] transition">
-                            <button onClick={()=> showPrev()}><Image className="min-w-[20px]" src={left}/></button>
-                            <div key={id} className=" flex justify-around items-center md:flex-row md:w-[1450px] lg:ml-[20px] lg:mr-[20px] flex-col mr-auto ml-auto  ">
+                        <div key={id} style={{translate: `${-100 * commentIndex}%`}} className="md:min-w-screen min-w-[100%] flex justify-center p-[20px] transition">
+                            <button onClick={()=> showPrev()}><Image alt="prev" className="min-w-[20px]" src={left}/></button>
+                            <div className=" flex justify-around items-center md:flex-row md:w-[1450px] lg:ml-[20px] lg:mr-[20px] flex-col mr-auto ml-auto  ">
                                 <div className=" w-fit m-[10px]">
-                                    <Image src={src}/>
+                                    <Image alt="tag" src={src}/>
                                 </div>
                                 <div className="md:w-[540px] lg:mt-auto lg:mb-auto  mt-[20px] w-[90%]  ">
-                                <Image src={quote}/>
+                                <Image alt="client" src={quote}/>
                                     <h2 className="lg:text-[32px] text-[26px] mt-[20px] font-semibold text-[#1E3240]">{header}</h2>
                                     <p className="lg:text-[24px] text-[18px] mt-[15px] font-light text-[#1E3240]">{comment}</p>
                                     <h3 className="lg:text-[24px] text-[18px] mt-[15px] font-semibold text-[#1E3240]">{name}</h3>
                                     <h4 className="lg:text-[18px] text-[18px] mb-[15px] text-[#1E3240]">{tag}</h4>
                                 </div>
                             </div>
-                            <button onClick={()=>showNext()}><Image className="min-w-[20px]" src={right}/></button>
+                            <button onClick={()=>showNext()}><Image alt="next" className="min-w-[20px]" src={right}/></button>
                         </div>
                         )
                     })}

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-3xl: 117.5rem;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -12,7 +16,7 @@
       animation: scrolling 15s linear infinite;
 }
 
-  @keyframes scrolling {
+@keyframes scrolling {
       0% {
           transform: translateX(0);
       }
@@ -23,7 +27,6 @@
   }
 #caroussel:hover .group{
         animation-play-state: paused;
-
 }
 
 nav>button{
@@ -47,5 +50,4 @@ input[type=number]::-webkit-inner-spin-button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
 }

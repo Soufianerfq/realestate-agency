@@ -1,13 +1,12 @@
 export default function Nav({home, portfolio, reviews, contactus, aboutus }){
     return(
-            <nav className=" w-[40%] text-[#1E3240] flex justify-around space-x-1 font-normal text-[14px] ">
+            <nav className=" w-[40%] text-[#1E3240] flex justify-around space-x-1 font-normal text-[14px] 3xl:text-[30px] 3xl:space-x-3 3xl:w-[50%] ">
             <button
               onClick={() =>{
                 home.current?.scrollIntoView({
                   behavior: "smooth",
                   block: 'start'
                 })
-                setOpen(false)
               }
               }
             >
@@ -18,7 +17,6 @@ export default function Nav({home, portfolio, reviews, contactus, aboutus }){
                 aboutus.current?.scrollIntoView({
                   behavior: "smooth",
                 })
-                setOpen(false)
               }
               }
             >
@@ -29,7 +27,6 @@ export default function Nav({home, portfolio, reviews, contactus, aboutus }){
                 portfolio.current?.scrollIntoView({
                   behavior: "smooth",
                 })
-                setOpen(false)
               }
               }
             >
@@ -40,7 +37,6 @@ export default function Nav({home, portfolio, reviews, contactus, aboutus }){
                 reviews.current?.scrollIntoView({
                   behavior: "smooth",
                 })
-                setOpen(false);
               }
               }
             >
@@ -51,7 +47,6 @@ export default function Nav({home, portfolio, reviews, contactus, aboutus }){
                 contactus.current?.scrollIntoView({
                   behavior: "smooth",
                 })
-                setOpen(false);
               }
               }
             >
