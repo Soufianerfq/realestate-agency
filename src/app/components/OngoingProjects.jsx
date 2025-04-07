@@ -26,7 +26,7 @@ export default function OngoingProjects(){
                 {projects.map(({id, src, name, location})=>{
                     return(
                         <div className="group">
-                            <div key={id} className=" flex flex-col justify-center">
+                            <div key={id +1} className=" flex flex-col justify-center">
                                     <Image alt="house" className="min-w-[350px] max-h-[450px]" src={src}/>
                                 <div id="card" className="pt-[15px] bg-white pb-[15px] pr-[10px] pl-[10px] w-[290px] self-center relative bottom-9 shadow-[0_0_8px_1px_rgba(0,0,0,0.33);]">
                                     <h3 className="text-[14px] font-semibold text-[#1E3240]">{name}</h3>
